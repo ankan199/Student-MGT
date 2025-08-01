@@ -72,6 +72,7 @@
         <th>Subjects</th>
         <th>Admission No.</th>
         <th>Date of Admission</th>
+        <th>Action</th>
       </tr>
     </thead>
     <tbody>
@@ -87,6 +88,9 @@
         <td>{{ std.student_subjects }}</td>
         <td>{{ std.student_admno }}</td>
         <td>{{ std.student_doadm }}</td>
+        <td>
+          <a href="{{ url_for('edit', student_id=std.id) }}" class="btn btn-sm btn-primary">Edit</a>
+        </td>
       </tr>
       {% endfor %}
     </tbody>
