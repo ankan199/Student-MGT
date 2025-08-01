@@ -1,53 +1,54 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Edit Student</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-  <div class="container mt-4">
-    <h2>Edit Student</h2>
-    <form action="" method="post">
-      <div class="mb-3">
-        <label class="form-label">Name of Student</label>
-        <input type="text" class="form-control" name="student_name" value="{{ student.student_name }}">
-      </div>
-      <div class="mb-3">
-        <label class="form-label">Class</label>
-        <input type="text" class="form-control" name="student_class" value="{{ student.student_class }}">
-      </div>
-      <div class="mb-3">
-        <label class="form-label">Date of Birth</label>
-        <input type="text" class="form-control" name="student_dob" value="{{ student.student_dob }}">
-      </div>
-      <div class="mb-3">
-        <label class="form-label">City</label>
-        <input type="text" class="form-control" name="student_city" value="{{ student.student_city }}">
-      </div>
-      <div class="mb-3">
-        <label class="form-label">State</label>
-        <input type="text" class="form-control" name="student_state" value="{{ student.student_state }}">
-      </div>
-      <div class="mb-3">
-        <label class="form-label">Stream</label>
-        <input type="text" class="form-control" name="student_stream" value="{{ student.student_stream }}">
-      </div>
-      <div class="mb-3">
-        <label class="form-label">Subjects</label>
-        <input type="text" class="form-control" name="student_subjects" value="{{ student.student_subjects }}">
-      </div>
-      <div class="mb-3">
-        <label class="form-label">Admission No.</label>
-        <input type="text" class="form-control" name="student_admno" value="{{ student.student_admno }}">
-      </div>
-      <div class="mb-3">
-        <label class="form-label">Date of Admission</label>
-        <input type="text" class="form-control" name="student_doadm" value="{{ student.student_doadm }}">
-      </div>
-      <button type="submit" class="btn btn-primary">Update</button>
-    </form>
-  </div>
+<div class="container mt-5">
+  <h2>Edit Student</h2>
+  <form method="post">
+    <div class="mb-3">
+      <label class="form-label">Name of Student</label>
+      <input type="text" class="form-control" name="student_name" value="{{ student.student_name }}">
+    </div>
+    <div class="mb-3">
+      <label class="form-label">Class</label>
+      <input type="text" class="form-control" name="student_class" value="{{ student.student_class }}">
+    </div>
+    <div class="mb-3">
+      <label class="form-label">Date of Birth</label>
+      <input type="date" class="form-control" name="student_dob" value="{{ student.student_dob }}">
+    </div>
+    <div class="mb-3">
+      <label class="form-label">City</label>
+      <input type="text" class="form-control" name="student_city" value="{{ student.student_city }}">
+    </div>
+    <div class="mb-3">
+      <label class="form-label">State</label>
+      <input type="text" class="form-control" name="student_state" value="{{ student.student_state }}">
+    </div>
+    <div class="mb-3">
+      <label class="form-label">Stream</label>
+      <input type="text" class="form-control" name="student_stream" value="{{ student.student_stream }}">
+    </div>
+    <div class="mb-3">
+      <label class="form-label">Subjects</label>
+      <input type="text" class="form-control" name="student_subjects" value="{{ student.student_subjects }}">
+    </div>
+    <div class="mb-3">
+      <label class="form-label">Admission No.</label>
+      <input type="text" class="form-control" name="student_admno" value="{{ student.student_admno }}">
+    </div>
+    <div class="mb-3">
+      <label class="form-label">Date of Admission</label>
+      <input type="date" class="form-control" name="student_doadm" value="{{ student.student_doadm }}">
+    </div>
+    <button type="submit" class="btn btn-primary">Update</button>
+  </form>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
