@@ -3,7 +3,7 @@ from flask import Flask, render_template, request, redirect, url_for
 app = Flask(__name__)
 
 students = []
-next_id = 1  # simple unique ID counter
+next_id = 1  # unique ID
 
 @app.route('/', methods=["GET", "POST"])
 def home():
@@ -44,7 +44,6 @@ def edit(student_id):
         return "Student not found", 404
 
     if request.method == "POST":
-        # Update student data
         student["student_name"] = request.form.get("student_name")
         student["student_class"] = request.form.get("student_class")
         student["student_dob"] = request.form.get("student_dob")
